@@ -5,6 +5,7 @@ CLICOLOR='1';       export CLICOLOR
 
 if command -v mate >/dev/null; then
   EDITOR='mate -w'
+  GIT_EDITOR='mate -wl1'; export GIT_EDITOR
 else
   EDITOR='vi'
 fi
