@@ -30,9 +30,8 @@ fi
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
-if [ -z "$GOPATH" -a "$BOXEN_SRC_DIR" ]; then
-  GOPATH="${BOXEN_SRC_DIR}/go"; export GOPATH
+if [ -z "$GOPATH" ]; then
+GOPATH=$HOME; export GOPATH
 fi
-if [ "$GOPATH" ]; then
-  [ -d "$GOPATH/bin" ] && PATH=$PATH:$GOPATH/bin; export PATH
-fi
+
+CDPATH=.:$GOPATH/src:$GOPATH/src/github.com:$GOPATH/src/bitbucket.org:$GOPATH/src/code.google.com/p
