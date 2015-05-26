@@ -3,9 +3,8 @@ LC_CTYPE='en_US.UTF-8'; export LC_CTYPE
 BROWSER='open';     export BROWSER
 CLICOLOR='1';       export CLICOLOR
 
-if command -v mate >/dev/null; then
-  EDITOR='mate -w'
-  GIT_EDITOR='mate -wl1'; export GIT_EDITOR
+if command -v emacsclient >/dev/null; then
+  EDITOR='emacsclient -c'
 else
   EDITOR='vi'
 fi
