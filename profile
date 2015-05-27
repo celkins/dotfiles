@@ -3,18 +3,8 @@ LC_CTYPE='en_US.UTF-8'; export LC_CTYPE
 BROWSER='open';     export BROWSER
 CLICOLOR='1';       export CLICOLOR
 
-if command -v emacsclient >/dev/null; then
-  EDITOR='emacsclient -c'
-else
-  EDITOR='vi'
-fi
-export EDITOR
-
-VISUAL="${EDITOR}"; export VISUAL
-
 PAGER='less';               export PAGER
 LESS='eiMRsXx4';            export LESS
-LESSEDIT='mate -l %lm %f';  export LESSEDIT
 
 command -v lesspipe.sh >/dev/null 2>&1 && {
   LESSOPEN="|lesspipe.sh %s"; export LESSOPEN

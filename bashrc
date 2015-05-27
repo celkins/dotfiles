@@ -1,3 +1,14 @@
+# http://stuff-things.net/2014/12/16/working-with-emacsclient/
+#
+if [ -z "$SSH_CONNECTION" ]; then
+  alias ec="emacsclient -c -n"
+  export EDITOR="emacsclient -c"
+  export ALTERNATE_EDITOR=""
+else
+  export EDITOR=$(type -P emacs || type -P vim || type -P vi)
+fi
+export VISUAL=$EDITOR
+
 alias ..='cd ..'
 alias cd..='cd ..'
 alias ha='history -a'
