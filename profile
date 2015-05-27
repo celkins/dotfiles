@@ -1,15 +1,5 @@
 LC_CTYPE='en_US.UTF-8'; export LC_CTYPE
 
-BROWSER='open';     export BROWSER
-CLICOLOR='1';       export CLICOLOR
-
-PAGER='less';               export PAGER
-LESS='eiMRsXx4';            export LESS
-
-command -v lesspipe.sh >/dev/null 2>&1 && {
-  LESSOPEN="|lesspipe.sh %s"; export LESSOPEN
-}
-
 [ -d "${HOME}/bin" ] && PATH=${HOME}/bin:${PATH}; export PATH
 
 if [ -f "${HOME}/.gpg-agent-info" ]; then

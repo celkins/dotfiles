@@ -9,6 +9,16 @@ else
 fi
 export VISUAL=$EDITOR
 
+export BROWSER='open'
+export CLICOLOR='1'
+
+export PAGER='less'
+export LESS='eiMRsXx4'
+
+command -v lesspipe.sh >/dev/null 2>&1 && {
+  export LESSOPEN="|lesspipe.sh %s"
+}
+
 alias ..='cd ..'
 alias cd..='cd ..'
 alias ha='history -a'
