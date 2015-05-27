@@ -1,13 +1,18 @@
-# http://stuff-things.net/2014/12/16/working-with-emacsclient/
+# http://www.turnkeylinux.org/blog/generic-shell-hooks
 #
-if [ -z "$SSH_CONNECTION" ]; then
-  alias ec="emacsclient -c -n"
-  export EDITOR="emacsclient -c"
-  export ALTERNATE_EDITOR=""
-else
-  export EDITOR=$(type -P emacs || type -P vim || type -P vi)
-fi
-export VISUAL=$EDITOR
+run_scripts()
+{
+    for script in $1/*; do
+
+        # skip non-executable snippets
+        [ -x "$script" ] || continue
+
+        # execute $script in the context of the current shell
+        . $script
+    done
+}
+
+run_scripts ~/.bashrc.d
 
 export BROWSER='open'
 export CLICOLOR='1'

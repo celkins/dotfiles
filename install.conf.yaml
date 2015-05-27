@@ -4,6 +4,7 @@
     ~/.bash_logout: bash_logout
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
+    ~/.bashrc.d: bashrc.d
     ~/.gitignore: gitignore
     ~/.inputrc: inputrc
     ~/.profile: profile
