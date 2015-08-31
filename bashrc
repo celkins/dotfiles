@@ -30,6 +30,7 @@ alias ha='history -a'
 alias hn='history -n'
 alias ll='ls -al'
 alias md='mkdir -p'
+alias pbclean='pbpaste | pbcopy'
 alias po='popd'
 alias pu='pushd'
 
