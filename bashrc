@@ -1,3 +1,5 @@
+# -*- mode: sh -*-
+
 # http://www.turnkeylinux.org/blog/generic-shell-hooks
 #
 run_scripts()

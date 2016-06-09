@@ -1,3 +1,5 @@
+# -*- mode: sh -*-
+
 if [ $(command -v jenv) ]; then
   eval "$(jenv init -)"
 fi

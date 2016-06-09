@@ -1,3 +1,5 @@
+# -*- mode: sh -*-
+
 if [ -f ~/.profile ];       then . ~/.profile;       fi
 if [ -r ~/.profile.local ]; then . ~/.profile.local; fi
 

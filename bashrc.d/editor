@@ -1,3 +1,5 @@
+# -*- mode: sh -*-
+
 # http://stuff-things.net/2014/12/16/working-with-emacsclient/
 #
 if [ -z "$SSH_CONNECTION" ]; then

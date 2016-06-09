@@ -1,3 +1,5 @@
+# -*- mode: sh -*-
+
 LC_CTYPE='en_US.UTF-8'; export LC_CTYPE
 
 [ -d "${HOME}/bin" ] && PATH=${HOME}/bin:${PATH}; export PATH
