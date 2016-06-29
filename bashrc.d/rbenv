@@ -1,0 +1,5 @@
+# -*- mode: sh -*-
+
+if [ $(command -v rbenv) ]; then
+  eval "$(rbenv init -)"
+fi
