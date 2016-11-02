@@ -13,5 +13,7 @@
 	verbose = true
 [difftool]
 	prompt = false
+[difftool "code"]
+	cmd = code --wait --diff $LOCAL $REMOTE
 [help]
 	autocorrect = 1
