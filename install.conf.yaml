@@ -5,6 +5,9 @@
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.bashrc.d: bashrc.d
+    ~/.config/git/config:
+      create: true
+      path: config/git/config
     ~/.config/git/ignore:
       create: true
       force: true
