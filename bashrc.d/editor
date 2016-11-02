@@ -9,6 +9,8 @@ if [ -z "$SSH_CONNECTION" ]; then
     export GIT_EDITOR='mate -wl1'
     export LESSEDIT='mate -l %lm %f'
     export TEXEDIT='mate -w -l %d "%s"'
+  elif [ $(command -v code) ]; then
+    export EDITOR='code --wait'
   else
     alias ec="emacsclient -c -n"
     export EDITOR="emacsclient -c"
