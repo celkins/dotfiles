@@ -3,18 +3,8 @@
 # http://stuff-things.net/2014/12/16/working-with-emacsclient/
 #
 if [ -z "$SSH_CONNECTION" ]; then
-  if [ $(command -v mate) ]; then
-    # https://manual.macromates.com/en/using_textmate_from_terminal.html
-    export EDITOR='mate -w'
-    export GIT_EDITOR='mate -wl1'
-    export LESSEDIT='mate -l %lm %f'
-    export TEXEDIT='mate -w -l %d "%s"'
-  elif [ $(command -v code) ]; then
-    export EDITOR='code --wait'
-  else
-    export EDITOR="emacsclient -c"
-    export ALTERNATE_EDITOR=""
-  fi
+  export EDITOR="emacsclient -c"
+  export ALTERNATE_EDITOR=""
 else
   export EDITOR=$(type -P emacs || type -P vim || type -P vi)
 fi
