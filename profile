@@ -13,4 +13,4 @@ if [ -z "$GOPATH" ]; then
 GOPATH=$HOME; export GOPATH
 fi
 
-CDPATH=.:$GOPATH/src:$GOPATH/src/github.com:$GOPATH/src/bitbucket.org:$GOPATH/src/code.google.com/p
+CDPATH=.:$GOPATH/src:$GOPATH/src/github.com:$GOPATH/src/bitbucket.org
