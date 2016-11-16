@@ -9,8 +9,6 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
   export GPG_AGENT_INFO
 fi
 
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-
 if [ -z "$GOPATH" ]; then
 GOPATH=$HOME; export GOPATH
 fi
