@@ -12,7 +12,6 @@ if [ -z "$SSH_CONNECTION" ]; then
   elif [ $(command -v code) ]; then
     export EDITOR='code --wait'
   else
-    alias ec="emacsclient -c -n"
     export EDITOR="emacsclient -c"
     export ALTERNATE_EDITOR=""
   fi

@@ -1,0 +1,5 @@
+# -*- mode: sh -*-
+
+if [ $(command -v emacsclient) ]; then
+  alias ec="emacsclient -c -n"
+fi
