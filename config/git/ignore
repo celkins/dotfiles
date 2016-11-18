@@ -6,6 +6,60 @@
 */.cvsignore
 
 
+### https://raw.github.com/github/gitignore/c2abf3c412b2149e5a001e97845e13301dcb7533/Global/Eclipse.gitignore
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+
 ### https://raw.github.com/github/gitignore/c2abf3c412b2149e5a001e97845e13301dcb7533/Global/Emacs.gitignore
 
 # -*- mode: gitignore; -*-
@@ -146,6 +200,26 @@ Temporary Items
 .svn/
 
 
+### https://raw.github.com/github/gitignore/c2abf3c412b2149e5a001e97845e13301dcb7533/Global/Tags.gitignore
+
+# Ignore tags created by etags, ctags, gtags (GNU global) and cscope
+TAGS
+.TAGS
+!TAGS/
+tags
+.tags
+!tags/
+gtags.files
+GTAGS
+GRTAGS
+GPATH
+GSYMS
+cscope.files
+cscope.out
+cscope.in.out
+cscope.po.out
+
+
 ### https://raw.github.com/github/gitignore/c2abf3c412b2149e5a001e97845e13301dcb7533/Global/TextMate.gitignore
 
 *.tmproj
@@ -167,3 +241,9 @@ Session.vim
 tags
 
 
+### https://raw.github.com/github/gitignore/c2abf3c412b2149e5a001e97845e13301dcb7533/Global/VisualStudioCode.gitignore
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
