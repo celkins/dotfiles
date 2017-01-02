@@ -40,7 +40,11 @@ set -o ignoreeof
 set -o noclobber
 
 shopt -s cdspell
-shopt -s histappend
+
+# Use conventional history management in the absence of Apple Terminal's resume support
+if ! [ -n "$TERM_SESSION_ID" ]; then
+  shopt -s histappend
+fi
 
 cd() {
   builtin cd "$1"
@@ -49,9 +53,6 @@ cd() {
 
 if [ -f /usr/local/share/liquidprompt ]; then
   . /usr/local/share/liquidprompt
-else
-  PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
-  PS1='[\u@\h \W]$ '
 fi
 
 GPG_TTY=$(tty)
