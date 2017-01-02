@@ -1,3 +1,5 @@
+tap 'caskroom/fonts'
 brew 'bash-completion'
 brew 'lesspipe'
 brew 'liquidprompt'
+cask 'font-source-code-pro'
