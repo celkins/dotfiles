@@ -1,10 +1,10 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_logout: bash_logout
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
-    ~/.bashrc.d: bashrc.d
+    ~/.bash_logout:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.bashrc.d:
     ~/.config/git/config:
       create: true
       path: config/git/config
@@ -12,9 +12,9 @@
       create: true
       force: true
       path: config/git/ignore
-    ~/.inputrc: inputrc
-    ~/.profile: profile
-    ~/.vimrc: vimrc
+    ~/.inputrc:
+    ~/.profile:
+    ~/.vimrc:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
