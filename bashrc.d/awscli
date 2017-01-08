@@ -1,5 +1,0 @@
-# -*- mode: sh -*-
-
-if [ $(command -v aws) ]; then
-  complete -C aws_completer aws
-fi
