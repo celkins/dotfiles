@@ -1,0 +1,6 @@
+- link:
+    ~/Library/KeyBindings/DefaultKeyBinding.dict: Library/KeyBindings/DefaultKeyBinding.dict
+
+- shell:
+  - mkdir -p ~/.m2 ~/Library/Caches/Maven/m2/repository && ln -fhs ~/Library/Caches/m2/repository ~/.m2/
+  - mkdir -p ~/Library/Caches/npm && ln -fhs ~/Library/Caches/npm ~/.npm
