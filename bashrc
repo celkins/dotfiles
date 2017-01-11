@@ -21,6 +21,7 @@ export CLICOLOR='1'
 
 export PAGER='less'
 export LESS='eiMRsXx4'
+export LESSHISTFILE=-
 
 command -v lesspipe.sh >/dev/null 2>&1 && {
   export LESSOPEN="|lesspipe.sh %s"
