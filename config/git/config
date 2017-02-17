@@ -15,5 +15,7 @@
 	prompt = false
 [difftool "code"]
 	cmd = code --wait --diff $LOCAL $REMOTE
+[fetch]
+	prune = true
 [help]
 	autocorrect = 1
