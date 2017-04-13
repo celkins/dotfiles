@@ -1,5 +1,6 @@
 tap 'caskroom/fonts'
 brew 'bash-completion'
+brew 'diff-so-fancy'
 brew 'lesspipe'
 brew 'liquidprompt'
 cask 'font-source-code-pro'
