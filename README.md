@@ -1,2 +1,6 @@
 dotfiles
 ========
+
+```
+$ ./install macos
+```
