@@ -7,26 +7,35 @@
 	tracked = ls-files -t
 	unmerged = cherry -v master
 	untracked = ls-files --others
+
 [branch]
 	autosetuprebase = always
+
 [color "diff-highlight"]
 	oldNormal = "red bold"
 	oldHighlight = "red bold 52"
 	newNormal = "green bold"
 	newHighlight = "green bold 22"
+
 [color "status"]
 	added = green
 	changed = yellow
+
 [commit]
 	verbose = true
+
 [difftool]
 	prompt = false
+
 [difftool "code"]
 	cmd = code --wait --diff $LOCAL $REMOTE
+
 [fetch]
 	prune = true
+
 [help]
 	autocorrect = 1
+
 [pager]
 	diff = diff-so-fancy | less --tabs=4 -RFX
 	show = diff-so-fancy | less --tabs=4 -RFX
