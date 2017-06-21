@@ -1,5 +1,9 @@
 - clean: ['~']
 
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - mkdir -m 700 -p ~/{.ssh,bin,pkg,src}
+
 - link:
     ~/.bash_logout:
     ~/.bash_profile:
@@ -14,8 +18,7 @@
       path: config/git/ignore
     ~/.inputrc:
     ~/.profile:
+    ~/.ssh/config:
+      create: true
+      path: ssh/config
     ~/.vimrc:
-
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - mkdir -m 700 -p ~/{bin,pkg,src}
