@@ -6,6 +6,7 @@
 	ls = log --decorate --oneline --graph
 	st = status --short --branch
 	tracked = ls-files -t
+	undo = !git reset HEAD~1
 	unmerged = cherry -v master
 	untracked = ls-files --others
 	up = !git pull && git submodule update --init --recursive
