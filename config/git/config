@@ -1,5 +1,6 @@
 [alias]
 	ci = commit
+	co = clone --recursive
 	ignored = ls-files --others -i --exclude-standard
 	ll = log --decorate --numstat
 	ls = log --decorate --oneline --graph
@@ -7,6 +8,7 @@
 	tracked = ls-files -t
 	unmerged = cherry -v master
 	untracked = ls-files --others
+	up = !git pull && git submodule update --init --recursive
 
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
