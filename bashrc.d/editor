@@ -6,9 +6,9 @@ if [ -z "$SSH_CONNECTION" ]; then
   if [ $(command -v code) ]; then
     export EDITOR='code --wait'
   else
-    export EDITOR="emacsclient -c"
+    export EDITOR='emacsclient -c'
   fi
-  export ALTERNATE_EDITOR=""
+  export ALTERNATE_EDITOR=''
 else
   export EDITOR=$(type -P emacs || type -P vim || type -P vi)
 fi
