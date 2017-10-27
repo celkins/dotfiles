@@ -38,10 +38,13 @@
 [commit]
 	verbose = true
 
+[diff]
+    tool = vscode
+
 [difftool]
 	prompt = false
 
-[difftool "code"]
+[difftool "vscode"]
 	cmd = code --wait --diff $LOCAL $REMOTE
 
 [fetch]
@@ -49,6 +52,12 @@
 
 [help]
 	autocorrect = 1
+
+[merge]
+    tool = vscode
+
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
 
 [pager]
 	diff = diff-so-fancy | less --tabs=4 -RFX
