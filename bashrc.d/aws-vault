@@ -1,5 +1,7 @@
 # -*- mode: sh -*-
 
-if [ $(command -v aws-vault) -a $(command -v aws) ]; then
-  alias aws='aws-vault exec "${AWS_PROFILE:-default}" -- aws "$@"'
+if [ $(command -v aws-vault) ]; then
+  if [ $(command -v aws) ]; then
+    alias aws='aws-vault exec "${AWS_PROFILE:-default}" -- aws "$@"'
+  fi
 fi
