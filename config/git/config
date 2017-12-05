@@ -2,7 +2,7 @@
 	ci = commit
 	co = clone --recursive
 	ignored = ls-files --others -i --exclude-standard
-	ll = log --decorate --numstat
+	ll = log --decorate --numstat --show-signature
 	ls = log --decorate --oneline --graph
 	st = status --short --branch
 	tracked = ls-files -t
