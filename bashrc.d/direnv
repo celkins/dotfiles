@@ -1,0 +1,5 @@
+# -*- mode: sh -*-
+
+if [ $(command -v direnv) ]; then
+  eval "$(direnv hook bash)"
+fi
