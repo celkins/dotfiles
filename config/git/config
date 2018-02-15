@@ -53,6 +53,9 @@
 [help]
 	autocorrect = 1
 
+[log]
+	follow = true
+
 [merge]
     tool = vscode
 
