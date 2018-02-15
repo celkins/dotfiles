@@ -2,7 +2,7 @@
 	ci = commit
 	co = clone --recursive
 	ignored = ls-files --others -i --exclude-standard
-	ll = log --decorate --numstat --show-signature
+	ll = log --decorate --numstat
 	ls = log --decorate --oneline --graph
 	st = status --short --branch
 	tracked = ls-files -t
@@ -55,6 +55,7 @@
 
 [log]
 	follow = true
+	showSignature = true
 
 [merge]
 	tool = vscode
