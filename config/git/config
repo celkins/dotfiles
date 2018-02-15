@@ -39,7 +39,7 @@
 	verbose = true
 
 [diff]
-    tool = vscode
+	tool = vscode
 
 [difftool]
 	prompt = false
@@ -57,7 +57,7 @@
 	follow = true
 
 [merge]
-    tool = vscode
+	tool = vscode
 
 [mergetool "vscode"]
 	cmd = code --wait $MERGED
