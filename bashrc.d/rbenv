@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
 
-if [ $(command -v rbenv) ]; then
+if [ "$(command -v rbenv)" ]; then
   eval "$(rbenv init -)"
 fi

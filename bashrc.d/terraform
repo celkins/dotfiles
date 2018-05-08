@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 
-if [ $(command -v terraform) ]; then
-  complete -C $(command -v terraform) terraform
+if [ "$(command -v terraform)" ]; then
+  complete -C "$(command -v terraform)" terraform
 
-  if [ $(command -v aws-vault) ]; then
-    alias terraform='aws-vault exec "${AWS_PROFILE:-default}" -- terraform "$@"'
+  if [ "$(command -v aws-vault)" ]; then
+    terraform() { aws-vault exec "${AWS_PROFILE:-default}" -- terraform "$@"; }
   fi
 fi

@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
 
-if [ $(command -v emacsclient) ]; then
+if [ "$(command -v emacsclient)" ]; then
   alias ec="emacsclient -c -n"
 fi

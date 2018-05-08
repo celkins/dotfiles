@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
-if [ $(command -v aws-vault) ]; then
-  if [ $(command -v aws) ]; then
-    alias aws='aws-vault exec "${AWS_PROFILE:-default}" -- aws "$@"'
+if [ "$(command -v aws-vault)" ]; then
+  if [ "$(command -v aws)" ]; then
+    aws() { aws-vault exec "${AWS_PROFILE:-default}" -- aws "$@"; }
   fi
 fi
