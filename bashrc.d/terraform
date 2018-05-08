@@ -1,4 +1,4 @@
-# -*- mode: sh -*-
+#! /usr/bin/env bash
 
 if [ $(command -v terraform) ]; then
   complete -C $(command -v terraform) terraform

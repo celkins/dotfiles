@@ -1,4 +1,4 @@
-# -*- mode: sh -*-
+#! /usr/bin/env bash
 
 # http://stuff-things.net/2014/12/16/working-with-emacsclient/
 #

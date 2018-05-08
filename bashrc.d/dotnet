@@ -1,4 +1,4 @@
-# -*- mode: sh -*-
+#! /usr/bin/env bash
 
 if [ $(command -v dotnet) ]; then
   export DOTNET_CLI_TELEMETRY_OPTOUT=1

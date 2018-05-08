@@ -1,4 +1,4 @@
-# -*- mode: sh -*-
+#! /usr/bin/env bash
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 

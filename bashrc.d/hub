@@ -1,4 +1,4 @@
-# -*- mode: sh -*-
+#! /usr/bin/env bash
 
 if [ $(command -v hub) ]; then
   eval "$(hub alias -s)"

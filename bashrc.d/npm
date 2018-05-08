@@ -1,4 +1,4 @@
-# -*- mode: sh -*-
+#! /usr/bin/env bash
 
 if [ $(command -v npm) ]; then
   export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm

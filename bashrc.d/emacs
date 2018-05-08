@@ -1,4 +1,4 @@
-# -*- mode: sh -*-
+#! /usr/bin/env bash
 
 if [ $(command -v emacsclient) ]; then
   alias ec="emacsclient -c -n"
