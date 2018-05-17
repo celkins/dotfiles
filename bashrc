@@ -29,13 +29,23 @@ command -v lesspipe.sh >/dev/null 2>&1 && {
 
 alias ..='cd ..'
 alias cd..='cd ..'
+alias cp='cp -i'
 alias ha='history -a'
 alias hn='history -n'
 alias ll='ls -al'
 alias md='mkdir -p'
+alias mv='mv -i'
 alias pbclean='pbpaste | pbcopy'
 alias po='popd'
 alias pu='pushd'
+
+# Always enable colored `grep` output
+alias grep='grep --color=auto '
+
+# Intuitive map function
+# For example, to list all directories that contain a certain file:
+# find . -name .gitattributes | map dirname
+alias map='xargs -n1'
 
 set -o ignoreeof
 set -o noclobber
