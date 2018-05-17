@@ -1,6 +1,7 @@
 tap 'caskroom/fonts'
 brew 'bash-completion'
 brew 'diff-so-fancy'
+brew 'gibo'
 brew 'lesspipe'
 brew 'liquidprompt'
 brew 'shellcheck'

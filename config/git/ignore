@@ -1,12 +1,4 @@
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/CVS.gitignore
-
-/CVS/*
-**/CVS/*
-.cvsignore
-*/.cvsignore
-
-
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/Eclipse.gitignore
+### https://raw.github.com/github/gitignore/e9c3096114fd81b92cf989f7343d7b168b80d994/Global/Eclipse.gitignore
 
 
 .metadata
@@ -32,6 +24,9 @@ local.properties
 
 # CDT-specific (C/C++ Development Tooling)
 .cproject
+
+# CDT- autotools 
+.autotools
 
 # Java annotation processor (APT)
 .factorypath
@@ -60,88 +55,42 @@ local.properties
 .worksheet
 
 
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/Emacs.gitignore
+### https://raw.github.com/github/gitignore/e9c3096114fd81b92cf989f7343d7b168b80d994/Global/JetBrains.gitignore
 
-# -*- mode: gitignore; -*-
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
-
-# Org-mode
-.org-id-locations
-*_archive
-
-# flymake-mode
-*_flymake.*
-
-# eshell files
-/eshell/history
-/eshell/lastdir
-
-# elpa packages
-/elpa/
-
-# reftex files
-*.rel
-
-# AUCTeX auto folder
-/auto/
-
-# cask packages
-.cask/
-dist/
-
-# Flycheck
-flycheck_*.el
-
-# server auth directory
-/server/
-
-# projectiles files
-.projectile
-
-# directory configuration
-.dir-locals.el
-
-
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/JetBrains.gitignore
-
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# User-specific stuff:
+# User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
-.idea/dictionaries
+.idea/**/dictionaries
+.idea/**/shelf
 
-# Sensitive or high-churn files:
+# Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
-.idea/**/dataSources.xml
 .idea/**/dataSources.local.xml
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
 
-# Gradle:
+# Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
 
-# Mongo Explorer plugin:
+# CMake
+cmake-build-debug/
+cmake-build-release/
+
+# Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
-## File-based project format:
+# File-based project format
 *.iws
 
-## Plugin-specific files:
-
 # IntelliJ
-/out/
+out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -158,20 +107,14 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/Mercurial.gitignore
-
-.hg/
-.hgignore
-.hgsigs
-.hgsub
-.hgsubstate
-.hgtags
+# Editor-based Rest Client
+.idea/httpRequests
 
 
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/macOS.gitignore
+### https://raw.github.com/github/gitignore/e9c3096114fd81b92cf989f7343d7b168b80d994/Global/macOS.gitignore
 
-*.DS_Store
+# General
+.DS_Store
 .AppleDouble
 .LSOverride
 
@@ -198,56 +141,27 @@ Temporary Items
 .apdisk
 
 
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/SVN.gitignore
+### https://raw.github.com/github/gitignore/e9c3096114fd81b92cf989f7343d7b168b80d994/Global/Vim.gitignore
 
-.svn/
-
-
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/Tags.gitignore
-
-# Ignore tags created by etags, ctags, gtags (GNU global) and cscope
-TAGS
-.TAGS
-!TAGS/
-tags
-.tags
-!tags/
-gtags.files
-GTAGS
-GRTAGS
-GPATH
-GSYMS
-cscope.files
-cscope.out
-cscope.in.out
-cscope.po.out
-
-
-
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/TextMate.gitignore
-
-*.tmproj
-*.tmproject
-tmtags
-
-
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/Vim.gitignore
-
-# swap
+# Swap
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
 [._]s[a-v][a-z]
 [._]sw[a-p]
-# session
+
+# Session
 Session.vim
-# temporary
+
+# Temporary
 .netrwhist
 *~
-# auto-generated tag files
+# Auto-generated tag files
 tags
+# Persistent undo
+[._]*.un~
 
 
-### https://raw.github.com/github/gitignore/f57304e9762876ae4c9b02867ed0cb887316387e/Global/VisualStudioCode.gitignore
+### https://raw.github.com/github/gitignore/e9c3096114fd81b92cf989f7343d7b168b80d994/Global/VisualStudioCode.gitignore
 
 .vscode/*
 !.vscode/settings.json
