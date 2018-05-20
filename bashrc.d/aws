@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+aws-switch() {
+  if [ -z "$1" ]; then
+    unset AWS_PROFILE
+  else
+    export AWS_PROFILE="$1"
+  fi
+}
