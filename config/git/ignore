@@ -1,3 +1,9 @@
+# https://github.com/direnv/direnv/wiki/Git
+# Direnv stuff
+.direnv
+.envrc
+
+
 # To refresh gibo-managed config:
 # $ gibo dump Eclipse JetBrains macOS Vim VisualStudioCode
 
