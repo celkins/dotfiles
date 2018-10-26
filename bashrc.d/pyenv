@@ -1,5 +1,9 @@
 #! /usr/bin/env bash
 
-if "command -v pyenv" > /dev/null; then eval "$(pyenv init - --no-rehash bash)"; fi
+if [ "$(command -v pyenv)" ]; then
+  eval "$(pyenv init - --no-rehash bash)"
 
-if "command -v pyenv-virtualenv-init" > /dev/null; then eval "$(pyenv virtualenv-init - bash)"; fi
+  if [ "$(command -v pyenv-virtualenv-init)" ]; then
+    eval "$(pyenv virtualenv-init - bash)"
+  fi
+fi
