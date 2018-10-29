@@ -16,6 +16,7 @@
       create: true
       force: true
       path: config/git/ignore
+    ~/.direnvrc:
     ~/.inputrc:
     ~/.profile:
     ~/.ssh/config:
