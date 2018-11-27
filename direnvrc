@@ -1,5 +1,11 @@
 #! /usr/bin/env bash
 
+if [ "$(command -v nodenv)" ]; then
+  NODE_VERSIONS="$(nodenv root)/versions"
+  NODE_VERSION_PREFIX=''
+  export NODE_VERSIONS NODE_VERSION_PREFIX
+fi
+
 use_python() {
   if [ -n "$(command -v pyenv)" ]; then
     local pyversion=$1
