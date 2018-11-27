@@ -28,3 +28,10 @@ layout_activate() {
     source "$(pyenv root)/versions/${1}/bin/activate"
   fi
 }
+
+use_ruby() {
+  if [ -n "$(command -v rbenv)" ]; then
+    load_prefix "$(rbenv root)/versions/${1}"
+    layout_ruby
+  fi
+}
