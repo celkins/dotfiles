@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+if [ "$(command -v dircolors)" ]; then
+  eval "$(dircolors ~/.dircolors)"
+elif [ "$(command -v gdircolors)" ]; then
+  eval "$(gdircolors ~/.dircolors)"
+fi

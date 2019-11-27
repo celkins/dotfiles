@@ -16,6 +16,8 @@
       create: true
       force: true
       path: config/git/ignore
+    ~/.dircolors:
+      path: dircolors/zenburn
     ~/.direnvrc:
     ~/.inputrc:
     ~/.profile:
