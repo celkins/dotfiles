@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+if [ "$(command -v exa)" ]; then
+  export TIME_STYLE='long-iso'
+  alias ll='exa --all --long --header --extended --git'
+
+  if [ ! "$(command -v tree)" ]; then
+    alias tree='exa --tree --all --long --header --extended --git'
+  fi
+fi
