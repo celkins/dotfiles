@@ -14,8 +14,6 @@ run_scripts()
     done
 }
 
-run_scripts ~/.bashrc.d
-
 export BROWSER='open'
 export CLICOLOR='1'
 
@@ -68,3 +66,5 @@ fi
 
 GPG_TTY=$(tty)
 export GPG_TTY
+
+run_scripts ~/.bashrc.d
