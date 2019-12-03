@@ -2,9 +2,11 @@
 
 if [ "$(command -v exa)" ]; then
   export TIME_STYLE='long-iso'
-  alias ll='exa --all --long --header --extended --git'
+  alias ll='exa --all --long --header --git'
+  alias llx='exa --all --long --header --git --extended'
 
   if [ ! "$(command -v tree)" ]; then
-    alias tree='exa --tree --all --long --header --extended --git'
+    alias tree='exa --tree --all --long --header --git'
+    alias treex='exa --tree --all --long --header --git --extended'
   fi
 fi
