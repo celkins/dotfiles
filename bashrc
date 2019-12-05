@@ -60,6 +60,8 @@ cd() {
   pwd
 }
 
+run_scripts ~/.bashrc.d
+
 if [ -f /usr/local/share/liquidprompt ]; then
   . /usr/local/share/liquidprompt
 fi
@@ -67,4 +69,3 @@ fi
 GPG_TTY=$(tty)
 export GPG_TTY
 
-run_scripts ~/.bashrc.d
