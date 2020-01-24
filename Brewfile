@@ -1,4 +1,4 @@
-tap 'caskroom/fonts'
+tap 'homebrew/cask-fonts'
 brew 'bash-completion'
 brew 'bat'
 brew 'diff-so-fancy'
