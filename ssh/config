@@ -1,3 +1,5 @@
+Include config.local
+
 Host *
   AddKeysToAgent yes
   ChallengeResponseAuthentication no
@@ -5,4 +7,3 @@ Host *
   PasswordAuthentication no
   UseKeychain no
   VisualHostKey yes
-  Include config.local
