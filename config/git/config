@@ -68,10 +68,14 @@
 	show = diff-so-fancy | less --tabs=4 -RFX
 
 [push]
-  default = current
+	default = current
 
 [remote]
-  pushdefault = origin
+	pushdefault = origin
 
 [status]
 	relativePaths = false
+
+[user]
+	name = Christopher Elkins
+	email = celkins@users.noreply.github.com
