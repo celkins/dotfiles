@@ -75,3 +75,7 @@
 
 [status]
 	relativePaths = false
+
+[user]
+	name = Christopher Elkins
+	email = celkins@users.noreply.github.com
