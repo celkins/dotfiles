@@ -9,6 +9,9 @@
     ~/.bash_profile:
     ~/.bashrc:
     ~/.bashrc.d:
+    ~/.config/gh/config.yml:
+      create: true
+      path: config/gh/config.yml
     ~/.config/git/config:
       create: true
       path: config/git/config
