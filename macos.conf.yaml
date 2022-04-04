@@ -1,5 +1,5 @@
 - shell:
-  - mkdir -p ~/.1password && ln -s ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock
+  - mkdir -p ~/.1password && ln -fhs ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock
   - mkdir -p ~/.gradle ~/Library/Caches/gradle/{caches,wrapper} && ln -fhs ~/Library/Caches/gradle/{caches,wrapper} ~/.gradle/
   - mkdir -p ~/.groovy ~/Library/Caches/groovy/grapes && ln -fhs ~/Library/Caches/groovy/grapes ~/.groovy/
   - mkdir -p ~/.ivy2 ~/Library/Caches/ivy2/cache && ln -fhs ~/Library/Caches/ivy2/cache ~/.ivy2/
