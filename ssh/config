@@ -1,9 +1,9 @@
 Include config.local
 
 Host *
-  AddKeysToAgent yes
   ChallengeResponseAuthentication no
   HashKnownHosts yes
+  IdentityAgent ~/.1password/agent.sock
   PasswordAuthentication no
   UseKeychain no
   VisualHostKey yes
