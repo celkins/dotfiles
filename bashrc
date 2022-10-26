@@ -64,6 +64,8 @@ run_scripts ~/.bashrc.d
 
 if [ -f /usr/local/share/liquidprompt ]; then
   . /usr/local/share/liquidprompt
+elif [ -f "${HOMEBREW_PREFIX}/share/liquidprompt" ]; then
+  . "${HOMEBREW_PREFIX}/share/liquidprompt"
 fi
 
 GPG_TTY=$(tty)
