@@ -4,5 +4,6 @@
   - mkdir -p ~/.groovy ~/Library/Caches/groovy/grapes && ln -fhs ~/Library/Caches/groovy/grapes ~/.groovy/
   - mkdir -p ~/.ivy2 ~/Library/Caches/ivy2/cache && ln -fhs ~/Library/Caches/ivy2/cache ~/.ivy2/
   - mkdir -p ~/.m2 ~/Library/Caches/m2/{repository,wrapper} && ln -fhs ~/Library/Caches/m2/{repository,wrapper} ~/.m2/
+  - mkdir -p ~/Library/KeyBindings && cp Library/KeyBindings/DefaultKeyBinding.dict ~/Library/KeyBindings/
   - mkdir -p ~/Library/Caches/sbt && ln -fhs ~/Library/Caches/sbt ~/.sbt
   - mkdir -p ~/.terraform.d ~/Library/Caches/terraform/plugins && ln -fhs ~/Library/Caches/terraform/plugins ~/.terraform.d/plugin-cache
