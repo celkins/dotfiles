@@ -3,3 +3,8 @@
 if [ "$(command -v gh)" ]; then
   eval "$(gh completion -s bash)"
 fi
+
+if [ -z "${GH_USERNAME}" ]; then
+  GH_USERNAME="$(logname)"
+  export GH_USERNAME
+fi
