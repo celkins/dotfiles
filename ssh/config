@@ -1,8 +1,10 @@
-# Order matters: ssh is first-match-wins, so the most specific/overridable
-# sources come first. Missing Include targets are silently ignored, so both of
-# these are inert on machines where the file does not exist.
-Include config.local
+# Order matters: ssh is first-match-wins, so these run most specific to most
+# general. Colima's generated blocks are host-specific; config.local holds
+# machine-wide overrides (e.g. work machines pointing Host * at a Secure Enclave
+# agent instead of 1Password) and so must still precede the defaults below.
+# Missing Include targets are silently ignored, so both are inert where absent.
 Include ~/.colima/ssh_config
+Include config.local
 
 Host *
   ChallengeResponseAuthentication no
