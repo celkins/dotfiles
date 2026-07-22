@@ -10,3 +10,4 @@ pager:
 aliases:
     co: pr checkout
     sync: '!gh repo sync "${GH_USERNAME}"/"$(basename $(pwd))" && gh repo sync'
+version: "1"

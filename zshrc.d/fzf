@@ -1,0 +1,18 @@
+#! /usr/bin/env zsh
+# shellcheck shell=bash
+
+if command -v fzf >/dev/null 2>&1; then
+  if command -v fd >/dev/null 2>&1; then
+    export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+    export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+  fi
+
+  # Zenburn picker colors
+  export FZF_DEFAULT_OPTS="--color=bg+:#3f3f3f,bg:#1f1f1f,fg:#dcdccc,fg+:#ffffff,hl:#dfaf8f,hl+:#f0dfaf,info:#7f9f7f,prompt:#dca3a3,pointer:#dca3a3,marker:#8cd0d3,spinner:#7f9f7f,header:#7f9f7f"
+
+  if command -v bat >/dev/null 2>&1; then
+    export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-range=:200 {}'"
+  fi
+
+  eval "$(fzf --zsh)"
+fi

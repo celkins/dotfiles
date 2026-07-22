@@ -1,0 +1,13 @@
+#! /usr/bin/env zsh
+# shellcheck shell=bash
+
+if command -v eza >/dev/null 2>&1; then
+  export TIME_STYLE='long-iso'
+  alias ll='eza -al --header --git --icons=auto'
+  alias llx='eza -al --header --git --extended --icons=auto'
+
+  if ! command -v tree >/dev/null 2>&1; then
+    alias tree='eza --tree --all --long --header --git --icons=auto'
+    alias treex='eza --tree --all --long --header --git --extended --icons=auto'
+  fi
+fi

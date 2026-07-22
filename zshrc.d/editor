@@ -1,0 +1,10 @@
+#! /usr/bin/env zsh
+# shellcheck shell=bash
+
+if [ -z "$SSH_CONNECTION" ] && command -v code >/dev/null 2>&1; then
+  export EDITOR='code --wait'
+else
+  EDITOR=$(command -v vim || command -v vi)
+  export EDITOR
+fi
+export VISUAL=$EDITOR

@@ -1,0 +1,4 @@
+# Public keys trusted for verifying git signatures (ssh signing has no keyring,
+# so trust must be declared explicitly). The principal must match the committer
+# email. namespaces="git" limits the key to git signatures only.
+celkins@users.noreply.github.com namespaces="git" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFm/VtE4MLt8wvsjwFdfeSLTKLoGuh6rLQ6Ze4uLTbEh

@@ -2,16 +2,25 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - mkdir -m 700 -p ~/{.ssh,bin,pkg,src}
+  - mkdir -m 700 -p ~/{.ssh,bin}
 
 - link:
-    ~/.bash_logout:
-    ~/.bash_profile:
-    ~/.bashrc:
-    ~/.bashrc.d:
+    ~/.zshenv:
+    ~/.zprofile:
+    ~/.zshrc:
+    ~/.zshrc.d:
+    ~/.config/1Password/ssh/agent.toml:
+      create: true
+      path: config/1Password/ssh/agent.toml
+    ~/.config/bat/themes/zenburn.tmTheme:
+      create: true
+      path: config/bat/themes/zenburn.tmTheme
     ~/.config/gh/config.yml:
       create: true
       path: config/gh/config.yml
+    ~/.config/git/allowed_signers:
+      create: true
+      path: config/git/allowed_signers
     ~/.config/git/config:
       create: true
       path: config/git/config
@@ -19,13 +28,19 @@
       create: true
       force: true
       path: config/git/ignore
+    ~/.config/git/signing-1password:
+      create: true
+      path: config/git/signing-1password
+    ~/.config/starship.toml:
+      create: true
+      path: config/starship.toml
     ~/.curlrc:
-    ~/.dircolors:
-      path: dircolors/zenburn
-    ~/.direnvrc:
     ~/.inputrc:
-    ~/.profile:
     ~/.ssh/config:
       create: true
       path: ssh/config
     ~/.vimrc:
+
+- shell:
+  - - command -v bat >/dev/null 2>&1 && bat cache --build || true
+    - Building bat theme cache

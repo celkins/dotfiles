@@ -25,12 +25,6 @@
 [branch]
 	autosetuprebase = always
 
-[color "diff-highlight"]
-	oldNormal = "red bold"
-	oldHighlight = "red bold 52"
-	newNormal = "green bold"
-	newHighlight = "green bold 22"
-
 [color "status"]
 	added = green
 	changed = yellow
@@ -40,6 +34,7 @@
 
 [diff]
 	tool = vscode
+	colorMoved = default
 
 [difftool]
 	prompt = false
@@ -59,13 +54,10 @@
 
 [merge]
 	tool = vscode
+	conflictStyle = zdiff3
 
 [mergetool "vscode"]
 	cmd = code --wait $MERGED
-
-[pager]
-	diff = diff-so-fancy | less --tabs=4 -RFX
-	show = diff-so-fancy | less --tabs=4 -RFX
 
 [push]
 	default = current
@@ -79,3 +71,30 @@
 [user]
 	name = Christopher Elkins
 	email = celkins@users.noreply.github.com
+
+[core]
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	line-numbers = true
+	syntax-theme = zenburn
+
+# Signature *verification* is global, unlike signing below: log.showSignature is
+# on for every repo, so without this any ssh-signed commit (including a
+# colleague's in a work repo) errors out instead of just showing as untrusted.
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers
+
+# Commit signing, scoped to the personal GitHub namespace by remote URL, so work
+# repos stay unsigned even on a personal machine and these dotfiles stay inert on
+# a work machine. Both URL forms are covered because `gh` clones over ssh while
+# older remotes here are https. Includes go last so they win over anything above.
+[includeIf "hasconfig:remote.*.url:https://github.com/celkins/**"]
+	path = ~/.config/git/signing-1password
+
+[includeIf "hasconfig:remote.*.url:git@github.com:celkins/**"]
+	path = ~/.config/git/signing-1password
