@@ -2,7 +2,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - mkdir -m 700 -p ~/{.ssh,bin,pkg,src}
+  - mkdir -m 700 -p ~/{.ssh,bin}
 
 - link:
     ~/.zshenv:
