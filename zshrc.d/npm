@@ -1,3 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env zsh
+# shellcheck shell=bash
 
 export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm

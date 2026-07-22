@@ -1,0 +1,8 @@
+# Auth key first: the agent offers keys in listed order. The signing key must be
+# listed too — op-ssh-sign can only reach keys enabled here once a custom config
+# exists (it does not fall back to the default Private/Personal vaults).
+[[ssh-keys]]
+item = "Personal SSH auth (ed25519)"
+
+[[ssh-keys]]
+item = "Git SSH signing (ed25519)"

@@ -1,4 +1,8 @@
+# Order matters: ssh is first-match-wins, so the most specific/overridable
+# sources come first. Missing Include targets are silently ignored, so both of
+# these are inert on machines where the file does not exist.
 Include config.local
+Include ~/.colima/ssh_config
 
 Host *
   ChallengeResponseAuthentication no

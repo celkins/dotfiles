@@ -1,0 +1,11 @@
+#! /usr/bin/env zsh
+# shellcheck shell=bash
+
+if command -v gh >/dev/null 2>&1; then
+  eval "$(gh completion -s zsh)"
+fi
+
+if [ -z "${GH_USERNAME}" ]; then
+  GH_USERNAME="$(logname)"
+  export GH_USERNAME
+fi

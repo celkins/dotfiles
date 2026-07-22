@@ -1,0 +1,7 @@
+#! /usr/bin/env zsh
+# shellcheck shell=bash
+
+if command -v brew >/dev/null 2>&1; then
+  export HOMEBREW_NO_ANALYTICS=1
+  export HOMEBREW_NO_INSECURE_REDIRECT=1
+fi

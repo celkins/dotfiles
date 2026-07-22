@@ -1,5 +1,0 @@
-#! /usr/bin/env bash
-
-if [ "$(command -v jenv)" ]; then
-  eval "$(jenv init -)"
-fi

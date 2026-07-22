@@ -1,0 +1,31 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+palette = "zenburn"
+
+[palettes.zenburn]
+red = "#dca3a3"
+green = "#7f9f7f"
+yellow = "#f0dfaf"
+blue = "#8cd0d3"
+purple = "#dc8cc3"
+orange = "#dfaf8f"
+gray = "#709080"
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+
+[directory]
+style = "blue"
+
+[git_branch]
+style = "purple"
+
+[git_status]
+style = "red"
+
+[cmd_duration]
+min_time = 500
+format = "[$duration]($style) "
+style = "yellow"

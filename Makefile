@@ -6,7 +6,7 @@ test: shellcheck
 
 .PHONY: shellcheck
 shellcheck:
-	@shellcheck bashrc.d/*
+	@shellcheck --shell=bash zshrc.d/*
 
 .PHONY: install
 install:
