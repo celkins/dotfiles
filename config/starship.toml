@@ -29,3 +29,8 @@ style = "red"
 min_time = 500
 format = "[$duration]($style) "
 style = "yellow"
+
+# Noisy rather than informative: it shows for any non-default context, which with
+# Colima means it is on in every shell.
+[docker_context]
+disabled = true
