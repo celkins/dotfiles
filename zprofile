@@ -9,7 +9,7 @@ elif [ -x /usr/local/bin/brew ]; then
 fi
 
 # Personal bin ahead of the rest.
-[ -d "${HOME}/bin" ] && export PATH="${HOME}/bin:${PATH}"
+[ -d "${HOME}/.local/bin" ] && export PATH="${HOME}/.local/bin:${PATH}"
 
 GPG_TTY=$(tty)
 export GPG_TTY
